@@ -10,7 +10,7 @@ if(!empty($_POST)){
     $rep = $auth->login($_POST['name'], $pass);
 
     if($rep){
-        header('Location: ../public/admin.php');
+        header('Location: admin.php');
     }else
         $error = 'Mot de passe ou identifiant incorrecte';  
 }
